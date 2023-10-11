@@ -9,7 +9,7 @@ buttonConvert.addEventListener("click", function () {
   const celsius = parseFloat(inputField.value);
   if (!isNaN(celsius)) {
     const fahrenheit = (celsius * 9) / 5 + 32;
-    title.innerHTML = `Result  <br/> ${celsius} Celsius is equal to ${fahrenheit.toFixed(
+    title.innerHTML = `Result : <br/> ${celsius} Celsius is equal to ${fahrenheit.toFixed(
       2
     )} Fahrenheit.`;
     resultElement.style.display = "block";
@@ -29,7 +29,7 @@ buttonReverse.addEventListener("click", function () {
   const fahrenheit = parseFloat(inputField.value);
   if (!isNaN(fahrenheit)) {
     const celsius = ((fahrenheit - 32) * 5) / 9;
-    title.innerHTML = `Result  <br/> ${fahrenheit} Fahrenheit is equal to ${celsius.toFixed(
+    title.innerHTML = `Result : <br/> ${fahrenheit} Fahrenheit is equal to ${celsius.toFixed(
       2
     )} Celsius.`;
     resultElement.style.display = "none";
